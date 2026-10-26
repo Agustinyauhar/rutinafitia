@@ -41,7 +41,7 @@ Permitir que cualquier persona obtenga una rutina de entrenamiento adaptada a su
 2. Abrir `index.html` en el navegador (por ahora)
 
 ## Seguimiento
-El avance semanal se registra en Trello: (pegar acá el link del tablero)
+El avance semanal se registra en Trello: https://trello.com/b/HhoyGoAQ/proyecto-final
 
 ## Autor
 Agustin
