@@ -32,9 +32,10 @@ Permitir que cualquier persona obtenga una rutina de entrenamiento adaptada a su
 - **RNF7 Privacidad:** no se piden datos sensibles innecesarios y se avisa cómo se usan los datos.
 
 ## Tecnologías
-- Front: (a definir)
-- Back: (a definir)
-- Base de datos: (a definir)
+- Front: React, Vite, Tailwind CSS, React Router, react-i18next
+- Back: Node.js + Express
+- Base de datos: SQLite
+- Extras: PWA, Chart.js, Netlify y Render para el deploy
 
 ## Cómo correrlo en local
 1. Clonar el repositorio
