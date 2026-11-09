@@ -37,9 +37,20 @@ Permitir que cualquier persona obtenga una rutina de entrenamiento adaptada a su
 - Base de datos: SQLite
 - Extras: PWA, Chart.js, Netlify y Render para el deploy
 
+## Documentación
+El diseño (paleta, wireframes, arquitectura, endpoints y modelo de datos) está en [`docs/diseno.md`](docs/diseno.md).
+
 ## Cómo correrlo en local
 1. Clonar el repositorio
-2. Abrir `index.html` en el navegador (por ahora)
+2. `cd client`
+3. `npm install`
+4. `npm run dev` y abrir http://localhost:5173
+
+## Estado del proyecto
+- [x] Sem 1: setup, repositorio y requisitos
+- [x] Sem 2: diseño, arquitectura y modelo de datos
+- [x] Sem 3: maquetado base (layout responsive, navegación, tema oscuro/claro)
+- [ ] Sem 4: formulario de usuario con validaciones
 
 ## Seguimiento
 El avance semanal se registra en Trello: https://trello.com/b/HhoyGoAQ/proyecto-final
