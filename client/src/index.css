@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* Paleta de docs/diseno.md (modo oscuro por defecto) */
+:root {
+  color-scheme: dark;
+  --bg: #0b0f14;
+  --surface: #151b23;
+  --border: #232c38;
+  --text: #e6edf3;
+  --muted: #8b98a9;
+  --primary: #a3e635;
+  --on-primary: #0b0f14;
+  --secondary: #38bdf8;
+  --accent: #f97316;
+  --success: #22c55e;
+  --danger: #ef4444;
+}
+
+:root.light {
+  color-scheme: light;
+  --bg: #f7f9fb;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #4d7c0f;
+  --on-primary: #ffffff;
+  --secondary: #0284c7;
+  --accent: #ea580c;
+  --success: #16a34a;
+  --danger: #dc2626;
+}
+
+/* Expone la paleta como clases de Tailwind: bg-surface, text-muted, etc. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-fg: var(--text);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 0.75rem;
+  --radius-btn: 0.625rem;
+}
+
+@layer base {
+  body {
+    @apply bg-bg font-sans text-fg antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+}
