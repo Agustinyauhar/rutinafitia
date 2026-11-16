@@ -1,31 +1,17 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Placeholder from './components/Placeholder'
+import CrearRutina from './pages/CrearRutina'
 import Home from './pages/Home'
+import Rutina from './pages/Rutina'
 
 export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route
-          path="crear"
-          element={
-            <Placeholder
-              title="Crear rutina"
-              description="Acá va el formulario con tu perfil (Sem 4)."
-            />
-          }
-        />
-        <Route
-          path="rutina"
-          element={
-            <Placeholder
-              title="Tu rutina"
-              description="Acá se va a ver la rutina generada (Sem 8)."
-            />
-          }
-        />
+        <Route path="crear" element={<CrearRutina />} />
+        <Route path="rutina" element={<Rutina />} />
         <Route
           path="progreso"
           element={
